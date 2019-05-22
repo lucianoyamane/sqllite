@@ -1,4 +1,4 @@
-package com.example.sqllite.demosqlite.configuration;
+package com.example.sqlite.demosqlite.configuration;
 
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;

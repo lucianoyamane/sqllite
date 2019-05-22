@@ -1,7 +1,8 @@
 spring:
   jpa:
-    database-plataform: com.example.sqlite.demosqlite.configuration.SQLiteDialect
+    database-platform: com.example.sqlite.demosqlite.configuration.SQLiteDialect
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
       naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
-    show-sql: true
+server:
+  port: 8550
