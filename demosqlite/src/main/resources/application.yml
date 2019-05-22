@@ -1,3 +1,7 @@
 spring:
   jpa:
-    database-plataform
+    database-plataform: com.example.sqlite.demosqlite.configuration.SQLiteDialect
+    hibernate:
+      ddl-auto: create
+      naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+    show-sql: true

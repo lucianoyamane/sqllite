@@ -1,4 +1,4 @@
-package com.example.sqllite.demosqlite.Configuration;
+package com.example.sqllite.demosqlite.configuration;
 
 import org.hibernate.dialect.Dialect;
 import org.hibernate.dialect.function.SQLFunctionTemplate;
