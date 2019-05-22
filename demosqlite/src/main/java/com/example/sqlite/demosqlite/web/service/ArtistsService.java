@@ -15,11 +15,11 @@ public class ArtistsService {
     public ArtistDAO artistDAO;
 
     public List<Artist> load() {
-        List<Artist> artists = new ArrayList<>();
-        Artist artist = new Artist();
-        artist.id = 1;
-        artist.name = "Teste";
-        artists.add(artist);
-        return artists;
+//        List<Artist> artists = new ArrayList<>();
+//        Artist artist = new Artist();
+//        artist.id = 1;
+//        artist.name = "Teste";
+//        artists.add(artist);
+        return this.artistDAO.findAll();
     }
 }
