@@ -13,7 +13,7 @@ public class DBConfig {
     public DataSource dataSource() {
         DataSourceBuilder dataSourceBuilder = DataSourceBuilder.create();
         dataSourceBuilder.driverClassName("org.sqlite.JDBC");
-        dataSourceBuilder.url("jdbc:sqlite:chinook.db");
+        dataSourceBuilder.url("jdbc:sqlite:../chinook.db");
         return dataSourceBuilder.build();
     }
 }
