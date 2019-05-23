@@ -4,5 +4,10 @@ spring:
     hibernate:
       ddl-auto: none
       naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+  local:
+    data-source:
+      driver-class-name: org.sqlite.JDBC
+      url: jdbc:sqlite:../db/chinook.db
 server:
   port: 8550
+
