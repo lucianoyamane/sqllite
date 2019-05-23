@@ -1,11 +1,9 @@
 package com.example.sqlite.demosqlite.repository;
 
-import com.example.sqlite.demosqlite.entity.AlbumEntity;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-import java.util.List;
+@Repository
+public class AlbumRepository {
 
-public interface AlbumRepository extends CrudRepository<AlbumEntity, Integer> {
 
-    List<AlbumEntity> findAll();
 }

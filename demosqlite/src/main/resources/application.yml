@@ -1,10 +1,4 @@
 spring:
-  jpa:
-    show-sql: true
-    database-platform: com.example.sqlite.demosqlite.configuration.SQLiteDialect
-    hibernate:
-      ddl-auto: none
-      naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
   local:
     data-source:
       driver-class-name: org.sqlite.JDBC

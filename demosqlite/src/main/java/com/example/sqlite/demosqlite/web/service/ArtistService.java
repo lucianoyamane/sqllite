@@ -14,24 +14,23 @@ public class ArtistService {
     public ArtistRepository artistRepository;
 
     public List<ArtistEntity> load() {
-        return this.artistRepository.findAll();
+        return this.artistRepository.load();
     }
 
     public ArtistEntity get(Integer id) {
-        return this.artistRepository.findById(id).get();
+        return this.artistRepository.get(id);
     }
 
     public Boolean save(ArtistEntity artistEntity) {
-        return this.artistRepository.save(artistEntity) != null;
+        return this.artistRepository.save(artistEntity);
     }
 
     public Boolean save(ArtistEntity artistEntity, Integer id) {
-        artistEntity.id = id;
-        return this.artistRepository.save(artistEntity) != null;
+        return this.artistRepository.update(artistEntity, id);
     }
 
     public Boolean delete(Integer id) {
-        this.artistRepository.deleteById(id);
+        this.artistRepository.delete(id);
         return true;
     }
 }
