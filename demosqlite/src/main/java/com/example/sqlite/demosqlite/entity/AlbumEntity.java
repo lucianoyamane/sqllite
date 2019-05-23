@@ -13,8 +13,8 @@ public class AlbumEntity {
 
     public String title;
 
-    @ManyToOne
-    @JoinColumn(name="artistid", nullable=false)
-    public ArtistEntity artist;
+//    @ManyToOne
+//    @JoinColumn(name="artistid", nullable=false)
+//    public ArtistEntity artist;
 
 }
