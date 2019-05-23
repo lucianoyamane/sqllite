@@ -1,5 +1,6 @@
 spring:
   jpa:
+    show-sql: true
     database-platform: com.example.sqlite.demosqlite.configuration.SQLiteDialect
     hibernate:
       ddl-auto: none
@@ -10,4 +11,5 @@ spring:
       url: jdbc:sqlite:../db/chinook.db
 server:
   port: 8550
-
+  servlet:
+    context-path: /sqlite

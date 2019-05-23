@@ -15,11 +15,24 @@ public class ArtistsService {
     public ArtistDAO artistDAO;
 
     public List<Artist> load() {
-//        List<Artist> artists = new ArrayList<>();
-//        Artist artist = new Artist();
-//        artist.id = 1;
-//        artist.name = "Teste";
-//        artists.add(artist);
         return this.artistDAO.findAll();
+    }
+
+    public Artist get(Integer id) {
+        return this.artistDAO.findById(id).get();
+    }
+
+    public Boolean save(Artist artist) {
+        return this.artistDAO.save(artist) != null;
+    }
+
+    public Boolean save(Artist artist, Integer id) {
+        artist.id = id;
+        return this.artistDAO.save(artist) != null;
+    }
+
+    public Boolean delete(Integer id) {
+        this.artistDAO.deleteById(id);
+        return true;
     }
 }
