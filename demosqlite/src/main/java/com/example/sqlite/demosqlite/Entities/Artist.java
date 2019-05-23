@@ -10,6 +10,6 @@ public class Artist {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "artistid")
     public Integer id;
-    
+
     public String name;
 }
