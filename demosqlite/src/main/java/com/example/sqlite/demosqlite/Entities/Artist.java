@@ -8,9 +8,9 @@ public class Artist {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ArtistId")
+    @Column(name = "artistid")
     public Integer id;
 
-    @Column(name = "Name")
+    @Column(name = "name")
     public String name;
 }
