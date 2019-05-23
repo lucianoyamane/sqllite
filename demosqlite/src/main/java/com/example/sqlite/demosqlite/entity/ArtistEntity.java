@@ -1,10 +1,10 @@
-package com.example.sqlite.demosqlite.Entities;
+package com.example.sqlite.demosqlite.entity;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "artists")
-public class Artist {
+public class ArtistEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
